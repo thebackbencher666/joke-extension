@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box ;
+    font-family: "Rubik", sans-serif;
+}
+body{
+    background-color: #208686;
+}
+html, body {
+    width: 300px;
+    height: 300px;
+    overflow: auto;
+}
+
+
+.wrapper{
+    width : 90%;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: #f50a0a;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 15px;
+    box-shadow: 20px 20px 40px rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+.emoji{
+    display: block;
+    text-align: center;
+    font-size: 100px;
+}
+.joke-text{
+    font-size: 16px;
+    color: #fff;
+    overflow-y: auto;
+    max-height: 150px;
+    font-weight: 400;
+    text-align: center;
+    word-wrap: break-word;
+    line-height: 35px;
+    margin: 20px 0;
+    opacity: 0;
+}
+.joke-text.fade{
+    opacity: 1;
+    transition: opacity 1.2s;
+}
+.joke-btn{
+    display: block;
+    background: #0a0a0a;
+    border: none;
+    padding: 5px;
+    font-size: 18px;
+    color: #f5f5f8;
+    font-weight: 600;
+    margin: 0 auto;
+    border-radius: 5px;
+    cursor: pointer
+}
+
+.joke-btn:hover {
+    background: #05df58;
+}
